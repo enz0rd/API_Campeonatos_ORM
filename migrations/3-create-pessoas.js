@@ -15,6 +15,11 @@ module.exports = {
       status: {
         type: Sequelize.STRING
       },
+      id_time: {
+        allowNull: true,
+        type: Sequelize.INTEGER,
+        references: {model: 'Times', key: 'id'}
+      },
       id_esporte: {
         allowNull: false,
         type: Sequelize.INTEGER,

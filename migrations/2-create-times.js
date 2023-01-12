@@ -20,11 +20,6 @@ module.exports = {
         type: Sequelize.INTEGER,
         references: {model: 'Esportes', key: 'id'}
       },
-      jogador_id: {
-        allowNull: false,
-        type: Sequelize.INTEGER,
-        references: {model: 'Pessoas', key: 'id'}
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
